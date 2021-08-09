@@ -20,4 +20,4 @@ MonoBehaviour:
   InstallationFolderPath: Assets/Plugins/DarkTonic/MasterAudio
   MixerWidthSetting: 0
   BusesShownInNarrow: 1
-  ShowWelcomeWindowOnStart: 1
+  ShowWelcomeWindowOnStart: 0
