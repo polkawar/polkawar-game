@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class CombatController : MonoBehaviour
 {
-    public class
+    //public class
 }
