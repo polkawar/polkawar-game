@@ -20,30 +20,38 @@ public class PlayerFIghtController : MonoBehaviour
     public string PlayerOneReturnAnimation;
 
     public string PlayerTwoDeffendAnimation;
+
+
+    public float PlayerOneJumpOffset;
     void Start()
     {
 
         PlayerOneInitialPosition = PlayerOne.transform.position;
         PlayerTwoInitialPosition = PlayerTwo.transform.position;
-        StartCoroutine(PlayerOneMeleeAttack());
+    
    
+    }
+
+    public void AttackOne()
+    {
+        StartCoroutine(PlayerOneMeleeAttack());
     }
 
     public IEnumerator PlayerOneMeleeAttack()
     {
        
-        LeanTween.move(PlayerOne, new Vector3(PlayerTwo.transform.position.x, PlayerTwo.transform.position.y, PlayerTwo.transform.position.z - 0.98f), 0.50f).setDelay(0.65f);
+        LeanTween.move(PlayerOne, new Vector3(PlayerTwo.transform.position.x, PlayerTwo.transform.position.y, PlayerTwo.transform.position.z - PlayerOneJumpOffset), 0.50f).setDelay(0.65f);
         PlayerOneModle.GetComponent<Animator>().Play(PlayerOneStartMoveAnimation);
         yield return new WaitForSeconds(2f);
       //  PlayerOneModle.GetComponent<Animator>().Play(PlayereOneEndMoveAnimation);
         yield return new WaitForSeconds(0.2f);
         PlayerOneModle.GetComponent<Animator>().Play(PlayerOneAttackAnimation);
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(1.2f);
         PlayerTwoModle.GetComponent<Animator>().Play(PlayerTwoDeffendAnimation);
         yield return new WaitForSeconds(3f);
         PlayerOneModle.GetComponent<Animator>().Play(PlayerOneReturnAnimation);
-        LeanTween.move(PlayerOne, PlayerOneInitialPosition, 0.50f).setDelay(0f);
-        yield return new WaitForSeconds(0.50f);
+        LeanTween.move(PlayerOne, PlayerOneInitialPosition, 0.50f).setDelay(0.65f);
+        yield return new WaitForSeconds(2f);
         PlayerOneModle.GetComponent<Animator>().Play("Idle");
 
     }
