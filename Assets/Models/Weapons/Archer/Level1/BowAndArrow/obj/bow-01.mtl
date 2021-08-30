@@ -1,0 +1,17 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 26.08.2021 17:36:03
+
+newmtl 07___Default
+	Ns 30.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.4680 0.4680 0.4680
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\POLKAWAR\character3\Client Send\texture\bow-diffuse-01.jpg
+	map_Kd C:\POLKAWAR\character3\Client Send\texture\bow-diffuse-01.jpg
+	map_bump Map__2_Normal_Bump.tga

@@ -1,0 +1,17 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 26.08.2021 17:30:08
+
+newmtl 01___Default
+	Ns 30.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.9180 0.9180 0.9180
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\POLKAWAR\character 1\Client Send\Magic-stick-01\texture\magic-stick-diffuse-01.tga
+	map_Kd C:\POLKAWAR\character 1\Client Send\Magic-stick-01\texture\magic-stick-diffuse-01.tga
+	map_bump Map__5_Normal_Bump.tga
